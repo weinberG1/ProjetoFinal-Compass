@@ -12,9 +12,9 @@ Banco de Dados de Alta Performance: Migração para AWS RDS Aurora MySQL, um ser
 
 CDN para Conteúdo Estático (AWS CloudFront): Distribuição global de conteúdo estático (imagens, vídeos, Links) utilizando S3, reduzindo a latência, melhorando a performance e otimizando custos.
 
-Balanceamento de Carga (AWS Application Load Balancing): Distribuição inteligente do tráfego entre as instâncias da aplicação, garantindo alta disponibilidade e tolerância a falhas.
+Balanceamento de Carga (AWS Application Load Balancing): Distribuição inteligente do tráfego entre as instâncias da aplicação, garantindo alta disponibilidade e tolerância a falhas através de target groups com healthcheck.
 
-Auto Scaling (AWS Auto Scaling): Ajuste automático da capacidade de processamento com base na demanda, garantindo performance consistente mesmo em picos de acesso e otimizando os custos.
+Auto Scaling (AWS Auto Scaling): Ajuste automático da capacidade de processamento com base sob demanda, garantindo performance consistente mesmo em picos de acesso e otimizando os custos.
 
 Monitoramento e Alertas (AWS CloudWatch): Monitoramento 24/7 da infraestrutura e aplicações com alertas proativos para identificar e solucionar problemas rapidamente. Dashboards customizados para visualização da performance e saúde do sistema.
 
