@@ -1,4 +1,4 @@
-# ProjetoFinal-Compass
+# Projeto Final Compass
 
 Título: Escopo da Solução: Performance, Escalabilidade e Segurança
 
