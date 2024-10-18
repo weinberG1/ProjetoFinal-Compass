@@ -10,7 +10,7 @@ Arquitetura de Microsserviços com Docker e Kubernetes: Decomposição da aplica
 
 Banco de Dados de Alta Performance: Migração para AWS RDS Aurora MySQL, um serviço de banco de dados relacional compatível com MySQL, oferecendo alta performance, escalabilidade e disponibilidade. Implementação de estratégias de replicação e clusterização para garantir a continuidade do negócio.
 
-CDN para Conteúdo Estático (AWS CloudFront): Distribuição global de conteúdo estático (imagens, vídeos, Links) utilizando S3, reduzindo a latência, melhorando a performance e otimizando custos.
+CDN para Conteúdo Estático (AWS CloudFront): Distribuição global de conteúdo estático (imagens, vídeos, links) utilizando S3, reduzindo a latência, melhorando a performance e otimizando custos.
 
 Balanceamento de Carga (AWS Application Load Balancing): Distribuição inteligente do tráfego entre as instâncias da aplicação, garantindo alta disponibilidade e tolerância a falhas através de target groups com healthcheck.
 
