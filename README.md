@@ -77,6 +77,7 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 </div>
 
 **Total Estimado Mensal:** **US$ 1042**
+
 **Total Estimado Anual:** **US$ 12500**
 
 ---
