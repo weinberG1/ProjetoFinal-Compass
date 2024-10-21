@@ -25,11 +25,8 @@
 7. **Monitoramento e Alertas (AWS CloudWatch)**
    - **Descrição:** Monitoramento 24/7 da infraestrutura e aplicações com alertas proativos para identificar e solucionar problemas rapidamente. Dashboards customizados para visualização da performance e saúde do sistema.
 
-8. **CI/CD (AWS CodePipeline)**
-   - **Descrição:** Implementação de pipelines de Integração e Entrega Contínua para automatizar o processo de desenvolvimento, teste e deployment, agilizando as atualizações e garantindo a qualidade do código.
-
-9. **Segurança Reforçada**
-   - **Descrição:** Implementação de melhores práticas de segurança na nuvem, incluindo políticas de acesso através do Amazon Route 53, firewalls (AWS WAF), monitoramento de segurança e uso do Key Management Service (KMS) para proteger os dados.
+8. **Segurança Reforçada**
+   - **Descrição:** Implementação de melhores práticas de segurança na nuvem, firewalls (AWS WAF), monitoramento de segurança e uso do Key Management Service (KMS) para proteger os dados.
 
 ---
 
@@ -59,7 +56,7 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
   - **AWS Backup:** Automatiza backups regulares do RDS e outros recursos críticos.
 
 <div align="center">
-  <img src="/src/AWS-Diagrama.jpg" width="720px">
+  <img src="/src/AWS-diagram.jpg" width="720px">
    <p><em>Nova Arquitetura</em></p>
 </div>
 
@@ -70,13 +67,17 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 **Custos Mensais Aproximados:**
 
 - **Amazon EKS:**
-  - Taxa de gerenciamento do cluster: **US$ 144**
-  - Nós de trabalho (3 x t3.medium): **US$ 130**
-- **Amazon RDS MySQL Multi-AZ (db.t3.medium):** **US$ 200**
+- Taxa de gerenciamento do cluster: **US$ 144**
+- Nós de trabalho (3 x t3.medium): **US$ 130**
+- **Amazon RDS MySQL Multi-AZ (db.r3.large):** **US$ 200**
 - **Amazon S3 e CloudFront:** **US$ 100**
 - **Application Load Balancer:** **US$ 50**
 - **AWS Backup e Armazenamento de Backups:** **US$ 50**
 - **Outros Serviços (VPC, CloudWatch, etc.):** **US$ 100**
+<div align="center">
+  <img src="/src/estimativa-projeto.png" width="720px">
+   <p><em>Representação da estimativa de preço</em></p>
+</div>
 
 **Total Estimado Mensal:** **US$ 774**
 
