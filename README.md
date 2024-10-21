@@ -33,10 +33,6 @@
 
 ---
 
-# Sugestão (Melhorar)
-
-- **Adicionar AWS Shield - Proteção contra ataques DDoS (Ver se nescessário e preços)**
-
 ## 2. Arquitetura da Nova Solução
 
 A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta pelos seguintes elementos:
@@ -61,6 +57,11 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 - **Monitoramento e Backup:**
   - **AWS CloudWatch:** Monitora métricas e logs, permitindo ações proativas.
   - **AWS Backup:** Automatiza backups regulares do RDS e outros recursos críticos.
+
+<div align="center">
+  <img src="/src/AWS-Diagrama.jpg" width="720px">
+   <p><em>Nova Arquitetura</em></p>
+</div>
 
 ---
 
