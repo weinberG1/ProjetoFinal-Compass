@@ -21,3 +21,98 @@ Monitoramento e Alertas (AWS CloudWatch): Monitoramento 24/7 da infraestrutura e
 CI/CD (AWS CodePipeline): Implementação de pipelines de Integração e Entrega Contínua para automatizar o processo de desenvolvimento, teste e deployment, agilizando as atualizações e garantindo a qualidade do código.
 
 Segurança Reforçada: Implementação de melhores práticas de segurança na nuvem, incluindo políticas de acesso através do Amazon Route 53, firewalls (AWS WAF), monitoramento de segurança e utilizar o Key Management Service (KMS) para proteger os dados.
+
+
+# Sugestão (Melhorar)
+
+- **Adicionar AWS Shield - Proteção contra ataques DDoS (Ver se nescessário e preços)**
+
+## 2. Arquitetura da Nova Solução
+
+A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta pelos seguintes elementos:
+
+- **Camada de Aplicação:**
+  - **EKS Cluster:** Hospeda a aplicação React containerizada, permitindo escalabilidade horizontal automática.
+  - **EFS (se necessário):** Fornece armazenamento compartilhado para dados persistentes.
+
+- **Camada de Dados:**
+  - **Amazon RDS MySQL Multi-AZ:** Banco de dados relacional gerenciado com alta disponibilidade e failover automático.
+
+- **Camada de Armazenamento Estático:**
+  - **Amazon S3:** Armazena conteúdos estáticos com integração ao CloudFront para distribuição.
+  - **Amazon CloudFront:** Acelera a entrega de conteúdo aos usuários finais globalmente.
+
+- **Camada de Rede e Segurança:**
+  - **Application Load Balancer:** Distribui o tráfego entre os pods do EKS, com health checks configurados.
+  - **VPC com Sub-redes Públicas e Privadas:** Isola recursos e controla o fluxo de tráfego.
+  - **AWS WAF e Shield:** Protegem a aplicação contra ameaças comuns e ataques DDoS.
+  - **IAM Policies e Security Groups:** Restrição de acesso baseada em funções e necessidades específicas.
+
+- **Monitoramento e Backup:**
+  - **AWS CloudWatch:** Monitora métricas e logs, permitindo ações proativas.
+  - **AWS Backup:** Automatiza backups regulares do RDS e outros recursos críticos.
+
+---
+
+## 3. Valores (Estimativa de Custos)
+
+**Custos Mensais Aproximados:**
+
+- **Amazon EKS:**
+  - Taxa de gerenciamento do cluster: **US$ 144**
+  - Nós de trabalho (3 x t3.medium): **US$ 130**
+- **Amazon RDS MySQL Multi-AZ (db.t3.medium):** **US$ 200**
+- **Amazon S3 e CloudFront:** **US$ 100**
+- **Application Load Balancer:** **US$ 50**
+- **AWS Backup e Armazenamento de Backups:** **US$ 50**
+- **Outros Serviços (VPC, CloudWatch, etc.):** **US$ 100**
+
+**Total Estimado Mensal:** **US$ 774**
+
+*Nota:* (Apenas uma estimativa) Verificar os preços com a **Calculadora de Preços da AWS**
+
+---
+
+## 4. Prazo de Entrega (Melhorar/Conferir)
+
+**Tempo Total Estimado:** **6 semanas**
+
+---
+
+## 5. Cronograma Macro de Entregas
+
+### **Semana 1: Planejamento e Configuração Inicial**
+
+- Revisão detalhada dos requisitos e definição do escopo final.
+- Configuração da VPC, sub-redes, tabelas de rotas e gateways.
+- Implementação de políticas IAM e criação de usuários e funções necessárias.
+
+### **Semana 2: Implementação da Infraestrutura**
+
+- Configuração do cluster Amazon EKS.
+- Criação e configuração do Amazon RDS MySQL com Multi-AZ.
+- Configuração do Amazon S3 para armazenamento estático.
+
+### **Semana 3: Deploy da Aplicação e Armazenamento**
+
+- Containerização da aplicação React e deploy nos pods do EKS.
+- Integração com o Application Load Balancer e configuração de health checks.
+- Implementação do Amazon CloudFront para distribuição de conteúdo.
+
+### **Semana 4: Segurança e Backup**
+
+- Configuração do AWS WAF e AWS Shield para proteção avançada.
+- Definição e implementação de grupos de segurança e NACLs.
+- Configuração do AWS Backup para políticas de backup automatizadas.
+
+### **Semana 5: Testes e Otimização**
+
+- Realização de testes de carga, desempenho e segurança.
+- Otimizações baseadas nos resultados dos testes.
+- Configuração do AWS CloudWatch para monitoramento e alertas.
+
+### **Semana 6: Go-Live e Documentação**
+
+- Migração final e cutover para o novo ambiente.
+- Treinamento da equipe de TI da "Fast Engineering S/A".
+- Entrega de documentação completa e suporte pós-implementação inicial.
