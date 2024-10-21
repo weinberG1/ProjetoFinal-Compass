@@ -66,22 +66,18 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 
 **Custos Mensais Aproximados:**
 
-- **Amazon EKS:**
-- Taxa de gerenciamento do cluster: **US$ 144**
-- Nós de trabalho (3 x t3.medium): **US$ 130**
-- **Amazon RDS MySQL Multi-AZ (db.r3.large):** **US$ 200**
-- **Amazon S3 e CloudFront:** **US$ 100**
-- **Application Load Balancer:** **US$ 50**
-- **AWS Backup e Armazenamento de Backups:** **US$ 50**
-- **Outros Serviços (VPC, CloudWatch, etc.):** **US$ 100**
+- Pods EKS 4x: **US$ 292**
+- **Amazon Aurora for MySQL Multi-AZ (db.r3.large):** **US$ 467**
+- **Amazon S3 e CloudFront:** **US$ 210**
+- **AWS Backup e Armazenamento de Backups:** **US$ 32**
+- **Outros Serviços (VPC, CloudWatch, WAF, etc.):** **US$ 41**
 <div align="center">
   <img src="/src/estimativa-projeto.png" width="720px">
    <p><em>Representação da estimativa de preço</em></p>
 </div>
 
-**Total Estimado Mensal:** **US$ 774**
-
-*Nota:* (Apenas uma estimativa) Verificar os preços com a **Calculadora de Preços da AWS**
+**Total Estimado Mensal:** **US$ 1042**
+**Total Estimado Anual:** **US$ 12500**
 
 ---
 
