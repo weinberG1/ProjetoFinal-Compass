@@ -59,7 +59,7 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
   - **AWS Backup:** Automatiza backups regulares do RDS e outros recursos críticos.
 
 <div align="center">
-  <img src="/src/AWS-Diagrama.jpg" width="720px">
+  <img src="/src/AWS-diagram.jpg" width="720px">
    <p><em>Nova Arquitetura</em></p>
 </div>
 
