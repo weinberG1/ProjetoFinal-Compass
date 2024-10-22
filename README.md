@@ -1,8 +1,8 @@
-# Projeto Final Compass
+# Atividade Final - Solução de ambiente AWS com Kubernetes 
 
-## Título: Escopo da Solução: Performance, Escalabilidade e Segurança
+Este repositório contém a atividade final do Programa de Bolsas DevSecOps - JUN 2024. O projeto tem como objetivo desenvolver uma proposta de solução arquitetônica e financeira para uma empresa fictícia, fornecendo uma infraestrutura escalável e robusta para seu eCommerce. A proposta inclui valores, prazos de entrega e um cronograma macro de entregas.
 
-### Seções com Ícones Representativos
+## Seções com Ícones Representativos
 
 1. **Modernização da Infraestrutura**
    - **Descrição:** Migração para a Nuvem AWS, aproveitando a alta disponibilidade, segurança e escalabilidade da plataforma.
@@ -36,10 +36,9 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 
 - **Camada de Aplicação:**
   - **EKS Cluster:** Hospeda a aplicação React containerizada, permitindo escalabilidade horizontal automática.
-  - **EFS (se necessário):** Fornece armazenamento compartilhado para dados persistentes.
 
 - **Camada de Dados:**
-  - **Amazon RDS MySQL Multi-AZ:** Banco de dados relacional gerenciado com alta disponibilidade e failover automático.
+  - **Amazon Aurora for MySQL Multi-AZ:** Banco de dados relacional gerenciado com alta disponibilidade e failover automático.
 
 - **Camada de Armazenamento Estático:**
   - **Amazon S3:** Armazena conteúdos estáticos com integração ao CloudFront para distribuição.
