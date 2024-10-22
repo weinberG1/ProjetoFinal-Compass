@@ -89,6 +89,10 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 **Trabalhando 6 horas por dia**
 
 **Total de horas trabalhadas até a entrega: 378 horas**
+<div align="center">
+  <img src="/src/crono.png" width="720px">
+   <p><em>Cronograma Macro de Entregas</em></p>
+</div>
 
 
 ---
