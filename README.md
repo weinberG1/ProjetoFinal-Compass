@@ -82,9 +82,14 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 
 ---
 
-## 4. Prazo de Entrega (Melhorar/Conferir)
+## 4. Prazo de Entrega
 
-**Tempo Total Estimado:** **6 semanas**
+**Tempo Total Estimado:** **21 dias úteis com uma equipe de 3 pessoas**
+
+**Trabalhando 6 horas por dia**
+
+**Total de horas trabalhadas até a entrega: 378 horas**
+
 
 ---
 
@@ -99,18 +104,18 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 ### **Semana 2: Implementação da Infraestrutura**
 
 - Configuração do cluster Amazon EKS.
-- Criação e configuração do Amazon RDS MySQL com Multi-AZ.
+- Criação e configuração do Amazon Aurora for MySQL com Multi-AZ.
 - Configuração do Amazon S3 e CloudFront para armazenamento estático.
 
 ### **Semana 3: Deploy da Aplicação**
 
 - Containerização da aplicação React e deploy nos pods do EKS.
 - Integração com o Application Load Balancer e configuração de health checks.
-- 
+
 ### **Semana 4: Segurança e Backup**
 
 - Configuração do AWS WAF e AWS Shield para proteção avançada.
-- Definição e implementação de grupos de segurança e NACLs.
+- Definição e implementação de grupos de segurança.
 - Configuração do AWS Backup para políticas de backup automatizadas.
 
 ### **Semana 5: Testes e Otimização**
