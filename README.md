@@ -95,36 +95,30 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 
 ## 5. Cronograma Macro de Entregas
 
-### **Semana 1: Planejamento e Configuração Inicial**
+### **Semana 1: Planejamento e Configuração Inicial da Infraestrutura**
 
 - Revisão detalhada dos requisitos e definição do escopo final.
 - Configuração da VPC, sub-redes, tabelas de rotas e gateways.
 - Implementação de políticas IAM e criação de usuários e funções necessárias.
-
-### **Semana 2: Implementação da Infraestrutura**
-
 - Configuração do cluster Amazon EKS.
-- Criação e configuração do Amazon Aurora for MySQL com Multi-AZ.
+- Criação e configuração do Amazon Aurora for MySQL com Multi-AZ
+
+### **Semana 2: Definição da Infraestrutura e Deploy da Aplicação**
+
 - Configuração do Amazon S3 e CloudFront para armazenamento estático.
-
-### **Semana 3: Deploy da Aplicação**
-
 - Containerização da aplicação React e deploy nos pods do EKS.
 - Integração com o Application Load Balancer e configuração de health checks.
-
-### **Semana 4: Segurança e Backup**
-
 - Configuração do AWS WAF e AWS Shield para proteção avançada.
 - Definição e implementação de grupos de segurança.
+
+### **Semana 3: Backup, testes e otimizações finais**
+
 - Configuração do AWS Backup para políticas de backup automatizadas.
-
-### **Semana 5: Testes e Otimização**
-
 - Realização de testes de carga, desempenho e segurança.
 - Otimizações baseadas nos resultados dos testes.
 - Configuração do AWS CloudWatch para monitoramento e alertas.
 
-### **Semana 6: Go-Live e Documentação**
+### **Semana 4: Go-Live e Documentação**
 
 - Migração final e cutover para o novo ambiente.
 - Treinamento da equipe de TI da "Fast Engineering S/A".
