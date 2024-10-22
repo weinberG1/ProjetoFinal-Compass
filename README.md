@@ -100,14 +100,13 @@ A arquitetura proposta alinha-se com as melhores práticas DevOps e é composta 
 
 - Configuração do cluster Amazon EKS.
 - Criação e configuração do Amazon RDS MySQL com Multi-AZ.
-- Configuração do Amazon S3 para armazenamento estático.
+- Configuração do Amazon S3 e CloudFront para armazenamento estático.
 
-### **Semana 3: Deploy da Aplicação e Armazenamento**
+### **Semana 3: Deploy da Aplicação**
 
 - Containerização da aplicação React e deploy nos pods do EKS.
 - Integração com o Application Load Balancer e configuração de health checks.
-- Implementação do Amazon CloudFront para distribuição de conteúdo.
-
+- 
 ### **Semana 4: Segurança e Backup**
 
 - Configuração do AWS WAF e AWS Shield para proteção avançada.
